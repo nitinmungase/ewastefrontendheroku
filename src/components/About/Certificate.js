@@ -11,32 +11,32 @@ export default class Certificate extends Component {
   render() {
     const currentUser = authService.getCurrentUser();
     return (
-      <body style={{ paddingTop: 110 }}>
-        <div className="container" >
-          <div id="downloadWrapper" ref={this.certificateWrapper}>
-            <div id="certificateWrapper">
-              <p>{currentUser.fullname}</p>
-              <img
-                 src={certificate}
-                alt="Certificate"
-                width="900px"
-              />
-              <div >
-                <button className="btn btn-warning"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    exportComponentAsPNG(this.certificateWrapper, {
-                      html2CanvasOptions: { backgroundColor: null },
-                    });
-                  }}
-                >
-                  Download
-                </button>
-              </div>
+      <div style={{ paddingTop: 180 }}>
+        <div className="container">
+          <div className="d-flex justify-content-center p-2">
+            <p className="certificateName">{currentUser.fullname}</p>
+            <img
+              ref={this.certificateWrapper}
+              className="certificateImg"
+              src={certificate}
+              alt="Certificate"
+            />
+            <div>
+              <button
+                className="btn btn-warning"
+                onClick={(e) => {
+                  e.preventDefault();
+                  exportComponentAsPNG(this.certificateWrapper, {
+                    html2CanvasOptions: { backgroundColor: null },
+                  });
+                }}
+              >
+                Download
+              </button>
             </div>
           </div>
         </div>
-      </body>
+      </div>
     );
   }
 }

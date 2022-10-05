@@ -3,7 +3,6 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
-
 import AuthService from "../services/auth.service";
 
 const required = (value) => {
@@ -146,7 +145,7 @@ export default class Register extends Component {
         (response) => {
           this.setState({
             message: response.data.message,
-            successful: true,
+            successful: true, 
           });
         },
         (error) => {
@@ -168,7 +167,7 @@ export default class Register extends Component {
 
   render() {
     return (
-      <div style={{ paddingTop: 80 }}>
+      <div style={{ paddingTop: 130 }}>
         <div className="col-md-12">
           <div className="card card-container pt-2">
             <img
@@ -279,6 +278,7 @@ export default class Register extends Component {
                   </div>
                 </div>
               )}
+               
               <CheckButton
                 style={{ display: "none" }}
                 ref={(c) => {

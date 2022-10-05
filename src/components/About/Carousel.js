@@ -1,5 +1,5 @@
 import React from "react";
-import carouselimg2 from "../../images/5a.png";
+import carouselimg2 from "../../images/A.png";
 import carouselimg4 from "../../images/A.png";
 import carouselimg5 from "../../images/B.png";
 import carouselimg3 from "../../images/C.png";
@@ -46,7 +46,7 @@ export default function Carousel() {
             src={carouselimg2}
             className="d-block w-100 mx-auto"
             alt="..."
-            height={300}
+            height={400}
           />
           <div className="carousel-caption d-none d-md-block">
             <h5 className="carousel-title">
@@ -66,7 +66,7 @@ export default function Carousel() {
             src={carouselimg3}
             className="d-block w-100 mx-auto"
             alt="..."
-            height={300}
+            height={400}
           />
           <div className="carousel-caption d-none d-md-block">
             <h5 className="carousel-title">
@@ -86,7 +86,7 @@ export default function Carousel() {
             src={carouselimg4}
             className="d-block w-100 mx-auto"
             alt="..."
-            height={300}
+            height={400}
           />
           <div className="carousel-caption d-none d-md-block">
             <h5 className="carousel-title">
@@ -107,7 +107,7 @@ export default function Carousel() {
             src={carouselimg5}
             className="d-block w-100 mx-auto"
             alt="..."
-            height={300}
+            height={400}
           />
           <div className="carousel-caption d-none d-md-block">
             <h5 className="carousel-title">

@@ -44,10 +44,10 @@ const BoardAdmin = () => {
   }
 
   return (
-    <div style={{ paddingTop: 94 }}>
-      <div className="container">
-        <header className="jumbotron pt-4">
-          <div className="container ">
+    <div style={{ paddingTop: 180 }}>
+      <div className="container-fluid">
+        <header className="jumbotron me-6 pe-6">
+          <div className="container-fluid ">
             <div className="crud shadow-lg p-5 mb-3 mt-3 bg-body rounded">
               <div className="row ">
                 <div className="text-center" style={{ color: "#198754" }}>

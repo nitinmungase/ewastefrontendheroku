@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
-
 import AuthService from "../services/auth.service";
 
 const required = value => {
@@ -57,6 +56,7 @@ export default class Login extends Component {
         () => {
           this.props.history.push("/profile");
           window.location.reload();
+          
         },
         error => {
           const resMessage =
@@ -81,7 +81,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div style={{paddingTop: 94 }} >
+      <div style={{paddingTop: 130 }} >
       <div className="col-md-12">
         <div className="card card-container">
           <img

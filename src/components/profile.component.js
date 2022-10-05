@@ -28,11 +28,11 @@ export default class Profile extends Component {
     const { currentUser } = this.state;
 
     return (
-      <div style={{paddingTop: 120 }} > 
+      <div style={{paddingTop: 180 }} > 
       <div className="container">
         {(this.state.userReady) ?
         <div>
-        <div class="breadcrumb">
+        <div className="breadcrumb">
           <h3>
             <strong>{currentUser.username}</strong> Profile
           </h3>

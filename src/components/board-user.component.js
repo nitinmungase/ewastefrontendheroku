@@ -79,19 +79,20 @@ const BoardUser = () => {
     });
     setShow(false);
     e.preventDefault();
+    setItem("");
   }
-  const handle = (e) => {   //handle for add new item
+  const handle = (event) => {
+    //handle for add new item
     const newitem = { ...item };
-    newitem[e.target.id] = e.target.value;
+    newitem[event.target.id] = event.target.value;
     setItem(newitem);
-    e.preventDefault();
   };
 
   return (
-    <div style={{ paddingTop: 94 }}>
-      <div className="container">
-        <header className="jumbotron pt-4">
-          <div className="container ">
+    <div style={{ paddingTop: 180 }}>
+      <div className="container-fluid">
+        <header className="jumbotron me-6 pe-6">
+          <div className="container-fluid ">
             <div className="crud shadow-lg p-5 mb-3 mt-3 bg-body rounded">
               <div className="text-center" style={{ color: "#198754" }}>
                 <h2>
@@ -139,7 +140,6 @@ const BoardUser = () => {
                                 &#xE254;
                               </i>
                             </button>
-
                             <button className="btn btn-light">
                               <i
                                 style={{ color: "red" }}
